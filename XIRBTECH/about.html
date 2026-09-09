@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Learn more about XIRBTECH - computer parts, PC building, upgrades, and technology solutions.">
+
+    <title>About Us | XIRBTECH</title>
+
+
+    <!-- ==========================================
+         BOOTSTRAP 5
+    =========================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==========================================
+         BOOTSTRAP ICONS
+    =========================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        rel="stylesheet">
+
+
+    <!-- ==========================================
+         CUSTOM CSS
+    =========================================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #080b12;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+
+        /* ==========================================
+           NAVBAR
+        =========================================== */
+
+        .navbar {
+            background: rgba(8, 11, 18, 0.88);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .navbar-brand i {
+            color: #00a8ff;
+            margin-right: 6px;
+        }
+
+        .navbar-brand span {
+            color: #00a8ff;
+        }
+
+        .nav-link {
+            color: #aab3c2 !important;
+            margin: 0 7px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #00a8ff !important;
+        }
+
+        .shop-btn {
+            border-radius: 8px;
+            padding: 9px 18px;
+        }
+
+
+        /* ==========================================
+           HERO
+        =========================================== */
+
+        .about-hero {
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+
+            padding: 140px 0 100px;
+
+            background:
+                radial-gradient(
+                    circle at 50% 35%,
+                    rgba(0, 168, 255, 0.18),
+                    transparent 38%
+                ),
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(0, 168, 255, 0.07),
+                    transparent 30%
+                ),
+                #080b12;
+
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: "";
+
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            border: 1px solid rgba(0, 168, 255, 0.08);
+
+            border-radius: 50%;
+
+            animation: rotateCircle 20s linear infinite;
+        }
+
+        .about-hero::after {
+            content: "";
+
+            position: absolute;
+
+            width: 700px;
+            height: 700px;
+
+            border: 1px solid rgba(0, 168, 255, 0.04);
+
+            border-radius: 50%;
+        }
+
+        @keyframes rotateCircle {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            color: #00a8ff;
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: 4px;
+
+            margin-bottom: 20px;
+        }
+
+        .hero-label i {
+            margin-right: 7px;
+        }
+
+        .about-hero h1 {
+            font-size: clamp(50px, 8vw, 100px);
+
+            font-weight: 900;
+
+            line-height: 0.95;
+
+            letter-spacing: -3px;
+
+            margin-bottom: 30px;
+        }
+
+        .about-hero h1 span {
+            color: #00a8ff;
+        }
+
+        .hero-description {
+            max-width: 720px;
+
+            margin: auto;
+
+            color: #8f99a8;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ==========================================
+           SECTION
+        =========================================== */
+
+        section {
+            position: relative;
+        }
+
+        .section-label {
+            color: #00a8ff;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: clamp(32px, 5vw, 52px);
+
+            font-weight: 800;
+
+            line-height: 1.1;
+        }
+
+        .section-title span {
+            color: #00a8ff;
+        }
+
+        .section-description {
+            color: #8c96a5;
+
+            line-height: 1.8;
+
+            font-size: 16px;
+        }
+
+
+        /* ==========================================
+           OUR STORY
+        =========================================== */
+
+        .story-section {
+            padding: 120px 0;
+
+            background: #0c1018;
+        }
+
+        .story-box {
+            position: relative;
+
+            min-height: 430px;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #131a25,
+                    #0a0e15
+                );
+
+            border: 1px solid #202b39;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        .story-box::before {
+            content: "";
+
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: rgba(0, 168, 255, 0.12);
+
+            filter: blur(70px);
+        }
+
+        .story-icon {
+            position: relative;
+
+            z-index: 2;
+
+            font-size: 150px;
+
+            color: #00a8ff;
+
+            text-shadow:
+                0 0 50px rgba(0, 168, 255, 0.35);
+        }
+
+        .story-content {
+            padding-left: 25px;
+        }
+
+        .story-content p {
+            color: #8b95a4;
+
+            line-height: 1.85;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* ==========================================
+           STATS
+        =========================================== */
+
+        .stats-section {
+            padding: 70px 0;
+
+            background: #080b12;
+
+            border-top: 1px solid #151c26;
+
+            border-bottom: 1px solid #151c26;
+        }
+
+        .stat-box {
+            text-align: center;
+
+            padding: 20px;
+
+            border-right: 1px solid #202735;
+        }
+
+        .stat-box:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 40px;
+
+            font-weight: 900;
+
+            color: #00a8ff;
+        }
+
+        .stat-title {
+            color: #9ca6b5;
+
+            font-size: 13px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* ==========================================
+           MISSION / VISION
+        =========================================== */
+
+        .mission-section {
+            padding: 120px 0;
+
+            background: #0c1018;
+        }
+
+        .mission-card {
+            height: 100%;
+
+            padding: 45px;
+
+            border-radius: 18px;
+
+            background: #111620;
+
+            border: 1px solid #202735;
+
+            transition: 0.35s;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-8px);
+
+            border-color: #00a8ff;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .mission-icon {
+            width: 65px;
+
+            height: 65px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 14px;
+
+            background: rgba(0, 168, 255, 0.1);
+
+            color: #00a8ff;
+
+            font-size: 28px;
+
+            margin-bottom: 25px;
+        }
+
+        .mission-card h3 {
+            font-size: 26px;
+
+            font-weight: 800;
+
+            margin-bottom: 15px;
+        }
+
+        .mission-card p {
+            color: #818b9a;
+
+            line-height: 1.8;
+
+            margin: 0;
+        }
+
+
+        /* ==========================================
+           VALUES
+        =========================================== */
+
+        .values-section {
+            padding: 120px 0;
+
+            background: #080b12;
+        }
+
+        .value-card {
+            height: 100%;
+
+            padding: 35px 30px;
+
+            background: #10151e;
+
+            border: 1px solid #202735;
+
+            border-radius: 14px;
+
+            transition: 0.3s;
+        }
+
+        .value-card:hover {
+            transform: translateY(-7px);
+
+            border-color: #00a8ff;
+        }
+
+        .value-number {
+            color: #00a8ff;
+
+            font-size: 13px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 25px;
+        }
+
+        .value-icon {
+            font-size: 35px;
+
+            color: #00a8ff;
+
+            margin-bottom: 20px;
+        }
+
+        .value-card h4 {
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .value-card p {
+            color: #7e8998;
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+            margin: 0;
+        }
+
+
+        /* ==========================================
+           SERVICES
+        =========================================== */
+
+        .services-section {
+            padding: 120px 0;
+
+            background: #0c1018;
+        }
+
+        .service-row {
+            padding: 30px 0;
+
+            border-bottom: 1px solid #202735;
+
+            transition: 0.3s;
+        }
+
+        .service-row:first-child {
+            border-top: 1px solid #202735;
+        }
+
+        .service-row:hover {
+            padding-left: 15px;
+        }
+
+        .service-number {
+            color: #00a8ff;
+
+            font-weight: 800;
+
+            font-size: 14px;
+        }
+
+        .service-name {
+            font-size: 22px;
+
+            font-weight: 700;
+        }
+
+        .service-description {
+            color: #7f8998;
+
+            font-size: 14px;
+
+            line-height: 1.6;
+        }
+
+        .service-arrow {
+            color: #00a8ff;
+
+            font-size: 22px;
+        }
+
+
+        /* ==========================================
+           CTA
+        =========================================== */
+
+        .cta-section {
+            padding: 120px 20px;
+
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(0, 168, 255, 0.15),
+                    transparent 45%
+                ),
+                #080b12;
+        }
+
+        .cta-icon {
+            font-size: 45px;
+
+            color: #00a8ff;
+
+            margin-bottom: 20px;
+        }
+
+        .cta-section h2 {
+            font-size: clamp(36px, 6vw, 65px);
+
+            font-weight: 900;
+
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            max-width: 650px;
+
+            margin: 0 auto 35px;
+
+            color: #8a94a3;
+
+            line-height: 1.8;
+        }
+
+        .cta-btn {
+            padding: 13px 28px;
+
+            border-radius: 8px;
+
+            font-weight: 600;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        =========================================== */
+
+        footer {
+            background: #05070b;
+
+            padding: 70px 0 25px;
+
+            border-top: 1px solid #171d27;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            color: white;
+        }
+
+        .footer-logo i {
+            color: #00a8ff;
+        }
+
+        .footer-logo span {
+            color: #00a8ff;
+        }
+
+        footer p {
+            color: #697383;
+
+            line-height: 1.7;
+        }
+
+        footer h5 {
+            font-size: 15px;
+
+            margin-bottom: 20px;
+        }
+
+        footer a:not(.footer-logo) {
+            display: block;
+
+            color: #737e8e;
+
+            text-decoration: none;
+
+            margin-bottom: 10px;
+
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: #00a8ff;
+        }
+
+        .social-icons {
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .social-icons a {
+            width: 40px;
+
+            height: 40px;
+
+            display: flex !important;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: #111620;
+
+            border: 1px solid #202735;
+
+            border-radius: 8px;
+
+            color: #9ca6b5 !important;
+        }
+
+        .social-icons a:hover {
+            color: #00a8ff !important;
+
+            border-color: #00a8ff;
+        }
+
+        .copyright {
+            border-top: 1px solid #171d27;
+
+            margin-top: 40px;
+
+            padding-top: 25px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            font-size: 13px;
+        }
+
+
+        /* ==========================================
+           RESPONSIVE
+        =========================================== */
+
+        @media (max-width: 991px) {
+
+            .story-content {
+                padding-left: 0;
+
+                margin-top: 30px;
+            }
+
+            .stat-box {
+                border-right: none;
+
+                border-bottom: 1px solid #202735;
+            }
+
+            .stat-box:last-child {
+                border-bottom: none;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .about-hero {
+                min-height: 560px;
+            }
+
+            .about-hero h1 {
+                letter-spacing: -2px;
+            }
+
+            .story-box {
+                min-height: 300px;
+            }
+
+            .story-icon {
+                font-size: 100px;
+            }
+
+            .mission-card {
+                padding: 30px;
+            }
+
+            .copyright {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==========================================
+     NAVIGATION
+=========================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+        <a
+            class="navbar-brand fw-bold"
+            href="index.html">
+
+            <i class="bi bi-pc-display"></i>
+
+            XIRB<span>TECH</span>
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="mainNavbar">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="index.html">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="products.html">
+
+                        Products/Services
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        href="about.html">
+
+                        About
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link"
+                        href="contact.html">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                    <a
+                        href="products.html"
+                        class="btn btn-primary shop-btn">
+
+                        Explore PCs
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==========================================
+     HERO
+=========================================== -->
+
+<section class="about-hero">
+
+    <div class="container text-center hero-content">
+
+        <p class="hero-label">
+
+            <i class="bi bi-cpu-fill"></i>
+
+            ABOUT XIRBTECH
+
+        </p>
+
+
+        <h1>
+
+            BUILT FOR
+
+            <span>YOUR NEXT BUILD.</span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            XIRBTECH is a computer technology platform
+            dedicated to helping users discover,
+            build, upgrade, and understand better
+            computer systems.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     OUR STORY
+=========================================== -->
+
+<section class="story-section">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+
+            <div class="col-lg-5">
+
+                <div class="story-box">
+
+                    <i class="bi bi-pc-display-horizontal story-icon"></i>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-7 story-content">
+
+                <p class="section-label">
+
+                    OUR STORY
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Technology.
+
+                    <span>Built Better.</span>
+
+                </h2>
+
+
+                <p class="section-description mt-4">
+
+                    XIRBTECH was created from a passion for
+                    computers, technology, gaming, and
+                    performance.
+
+                </p>
+
+
+                <p>
+
+                    Building or upgrading a computer can
+                    be challenging, especially when users
+                    need to understand different hardware
+                    specifications, compatibility, and
+                    performance requirements.
+
+                </p>
+
+
+                <p>
+
+                    Our goal is to create a simple and
+                    accessible platform where users can
+                    explore computer components and discover
+                    solutions that fit their needs.
+
+                </p>
+
+
+                <p>
+
+                    Whether you're a student, gamer,
+                    creator, professional, or first-time
+                    PC builder, XIRBTECH is designed to
+                    help you make better technology choices.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     STATS
+=========================================== -->
+
+<section class="stats-section">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-6 col-lg-3 stat-box">
+
+                <div class="stat-number">
+
+                    100%
+
+                </div>
+
+                <div class="stat-title">
+
+                    Build Focused
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3 stat-box">
+
+                <div class="stat-number">
+
+                    4+
+
+                </div>
+
+                <div class="stat-title">
+
+                    PC Categories
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3 stat-box">
+
+                <div class="stat-number">
+
+                    24/7
+
+                </div>
+
+                <div class="stat-title">
+
+                    Technology Access
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-lg-3 stat-box">
+
+                <div class="stat-number">
+
+                    ∞
+
+                </div>
+
+                <div class="stat-title">
+
+                    Build Possibilities
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     MISSION & VISION
+=========================================== -->
+
+<section class="mission-section">
+
+    <div class="container">
+
+
+        <div class="text-center mb-5">
+
+            <p class="section-label">
+
+                WHAT DRIVES US
+
+            </p>
+
+
+            <h2 class="section-title">
+
+                Our Mission &
+
+                <span>Vision.</span>
+
+            </h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-6">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="bi bi-bullseye"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Our Mission
+
+                    </h3>
+
+
+                    <p>
+
+                        To make computer technology easier
+                        to understand and more accessible
+                        by providing users with quality
+                        computer components, useful
+                        information, and practical PC
+                        solutions.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <div class="mission-card">
+
+                    <div class="mission-icon">
+
+                        <i class="bi bi-eye"></i>
+
+                    </div>
+
+
+                    <h3>
+
+                        Our Vision
+
+                    </h3>
+
+
+                    <p>
+
+                        To become a trusted technology
+                        destination where people can
+                        confidently explore, build, upgrade,
+                        and improve their computer systems.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     CORE VALUES
+=========================================== -->
+
+<section class="values-section">
+
+    <div class="container">
+
+
+        <div class="row align-items-end mb-5">
+
+            <div class="col-lg-7">
+
+                <p class="section-label">
+
+                    OUR VALUES
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    What Makes
+
+                    <span>XIRBTECH.</span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="col-lg-5">
+
+                <p class="section-description mt-3 mt-lg-0">
+
+                    Every part of XIRBTECH is built around
+                    providing a better and more useful
+                    technology experience.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="value-card">
+
+                    <div class="value-number">
+
+                        01 / QUALITY
+
+                    </div>
+
+
+                    <i class="bi bi-shield-check value-icon"></i>
+
+
+                    <h4>
+
+                        Quality
+
+                    </h4>
+
+
+                    <p>
+
+                        We prioritize dependable components
+                        and practical solutions for different
+                        computer needs.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="value-card">
+
+                    <div class="value-number">
+
+                        02 / PERFORMANCE
+
+                    </div>
+
+
+                    <i class="bi bi-speedometer2 value-icon"></i>
+
+
+                    <h4>
+
+                        Performance
+
+                    </h4>
+
+
+                    <p>
+
+                        We believe every component should
+                        contribute to a better and more
+                        efficient computing experience.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="value-card">
+
+                    <div class="value-number">
+
+                        03 / VALUE
+
+                    </div>
+
+
+                    <i class="bi bi-wallet2 value-icon"></i>
+
+
+                    <h4>
+
+                        Value
+
+                    </h4>
+
+
+                    <p>
+
+                        We help users find practical choices
+                        that balance performance, features,
+                        and budget.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 col-lg-3">
+
+                <div class="value-card">
+
+                    <div class="value-number">
+
+                        04 / INNOVATION
+
+                    </div>
+
+
+                    <i class="bi bi-lightning-charge value-icon"></i>
+
+
+                    <h4>
+
+                        Innovation
+
+                    </h4>
+
+
+                    <p>
+
+                        We continue exploring better ways
+                        to connect people with computer
+                        technology.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     WHAT WE DO
+=========================================== -->
+
+<section class="services-section">
+
+    <div class="container">
+
+
+        <div class="row align-items-end mb-5">
+
+            <div class="col-lg-6">
+
+                <p class="section-label">
+
+                    WHAT WE DO
+
+                </p>
+
+
+                <h2 class="section-title">
+
+                    Everything Your
+
+                    <span>PC Needs.</span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="col-lg-6">
+
+                <p class="section-description mt-3 mt-lg-0">
+
+                    From selecting individual components
+                    to planning complete builds, XIRBTECH
+                    focuses on making PC technology easier
+                    to explore.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 01 -->
+
+        <div class="row align-items-center service-row">
+
+            <div class="col-2 col-md-1 service-number">
+
+                01
+
+            </div>
+
+
+            <div class="col-md-4 service-name">
+
+                Computer Parts
+
+            </div>
+
+
+            <div class="col-md-6 service-description">
+
+                Explore essential components including
+                processors, graphics cards, memory,
+                storage, and other PC hardware.
+
+            </div>
+
+
+            <div class="col-1 text-end">
+
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 02 -->
+
+        <div class="row align-items-center service-row">
+
+            <div class="col-2 col-md-1 service-number">
+
+                02
+
+            </div>
+
+
+            <div class="col-md-4 service-name">
+
+                PC Building
+
+            </div>
+
+
+            <div class="col-md-6 service-description">
+
+                Plan computer builds based on gaming,
+                productivity, school, content creation,
+                and everyday computing needs.
+
+            </div>
+
+
+            <div class="col-1 text-end">
+
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 03 -->
+
+        <div class="row align-items-center service-row">
+
+            <div class="col-2 col-md-1 service-number">
+
+                03
+
+            </div>
+
+
+            <div class="col-md-4 service-name">
+
+                PC Upgrades
+
+            </div>
+
+
+            <div class="col-md-6 service-description">
+
+                Improve your current system by identifying
+                components that can provide better
+                performance and usability.
+
+            </div>
+
+
+            <div class="col-1 text-end">
+
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+
+            </div>
+
+        </div>
+
+
+        <!-- SERVICE 04 -->
+
+        <div class="row align-items-center service-row">
+
+            <div class="col-2 col-md-1 service-number">
+
+                04
+
+            </div>
+
+
+            <div class="col-md-4 service-name">
+
+                Technology Guidance
+
+            </div>
+
+
+            <div class="col-md-6 service-description">
+
+                Understand computer hardware and make
+                more informed decisions when selecting
+                components for your system.
+
+            </div>
+
+
+            <div class="col-1 text-end">
+
+                <i class="bi bi-arrow-up-right service-arrow"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     CTA
+=========================================== -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <i class="bi bi-cpu-fill cta-icon"></i>
+
+
+        <h2>
+
+            READY TO BUILD?
+
+        </h2>
+
+
+        <p>
+
+            Discover computer components and find the
+            right parts for your next PC build.
+
+        </p>
+
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+
+            <a
+                href="products.html"
+                class="btn btn-primary cta-btn">
+
+                Explore Products
+
+                <i class="bi bi-arrow-right ms-2"></i>
+
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="btn btn-outline-light cta-btn">
+
+                Contact XIRBTECH
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     FOOTER
+=========================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+
+            <div class="col-lg-5">
+
+                <a
+                    href="index.html"
+                    class="footer-logo">
+
+                    <i class="bi bi-pc-display"></i>
+
+                    XIRB<span>TECH</span>
+
+                </a>
+
+
+                <p class="mt-3">
+
+                    Computer parts, PC building,
+                    upgrades, and technology solutions
+                    built around performance and value.
+
+                </p>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>
+
+                    Navigation
+
+                </h5>
+
+
+                <a href="index.html">
+
+                    Home
+
+                </a>
+
+
+                <a href="products.html">
+
+                    Products
+
+                </a>
+
+
+                <a href="about.html">
+
+                    About
+
+                </a>
+
+
+                <a href="contact.html">
+
+                    Contact
+
+                </a>
+
+            </div>
+
+
+            <div class="col-6 col-lg-2">
+
+                <h5>
+
+                    Categories
+
+                </h5>
+
+
+                <a href="products.html">
+
+                    Processors
+
+                </a>
+
+
+                <a href="products.html">
+
+                    Graphics Cards
+
+                </a>
+
+
+                <a href="products.html">
+
+                    Memory
+
+                </a>
+
+
+                <a href="products.html">
+
+                    Storage
+
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <h5>
+
+                    Connect
+
+                </h5>
+
+
+                <div class="social-icons">
+
+                    <a href="#">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <i class="bi bi-discord"></i>
+
+                    </a>
+
+
+                    <a href="#">
+
+                        <i class="bi bi-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p class="mb-0">
+
+                © 2026 XIRBTECH. All Rights Reserved.
+
+            </p>
+
+
+            <p class="mb-0">
+
+                BUILD. UPGRADE. PERFORM.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==========================================
+     JQUERY
+=========================================== -->
+
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+
+
+
+<!-- ==========================================
+     BOOTSTRAP JS
+=========================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- ==========================================
+     CUSTOM JAVASCRIPT
+=========================================== -->
+
+<script src="js/script.js"></script>
+
+
+<script>
+
+    $(document).ready(function () {
+
+
+        /* ======================================
+           NAVBAR SCROLL EFFECT
+        ====================================== */
+
+        $(window).on("scroll", function () {
+
+            if ($(window).scrollTop() > 50) {
+
+                $(".navbar").css({
+                    "background":
+                        "rgba(5, 8, 13, 0.97)"
+                });
+
+            } else {
+
+                $(".navbar").css({
+                    "background":
+                        "rgba(8, 11, 18, 0.88)"
+                });
+
+            }
+
+        });
+
+
+        /* ======================================
+           REVEAL ANIMATION
+        ====================================== */
+
+        function revealElements() {
+
+            $(".mission-card, .value-card, .service-row")
+                .each(function () {
+
+                    let elementTop =
+                        $(this).offset().top;
+
+                    let windowBottom =
+                        $(window).scrollTop()
+                        + $(window).height();
+
+                    if (windowBottom >
+                        elementTop + 50) {
+
+                        $(this).css({
+                            "opacity": "1",
+                            "transform": "translateY(0)"
+                        });
+
+                    }
+
+                });
+
+        }
+
+
+        $(".mission-card, .value-card, .service-row")
+            .css({
+                "opacity": "0",
+                "transform": "translateY(25px)",
+                "transition":
+                    "opacity .6s ease, transform .6s ease"
+            });
+
+
+        $(window).on("scroll", revealElements);
+
+        revealElements();
+
+
+        /* ======================================
+           SMOOTH INTERNAL LINKS
+        ====================================== */
+
+        $('a[href^="#"]').on("click", function (event) {
+
+            let target = $(this.hash);
+
+            if (target.length) {
+
+                event.preventDefault();
+
+                $("html, body").animate({
+
+                    scrollTop:
+                        target.offset().top - 80
+
+                }, 700);
+
+            }
+
+        });
+
+    });
+
+</script>
+
+
+</body>
+
+</html>

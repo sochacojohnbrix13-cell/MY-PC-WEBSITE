@@ -1,0 +1,913 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080b12;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    background: rgba(8, 11, 18, 0.92);
+    backdrop-filter: blur(12px);
+    padding: 18px 0;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    transition: 0.3s;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+.navbar-brand span {
+    color: #00a8ff;
+}
+
+.nav-link {
+    color: #c8ced8 !important;
+    margin: 0 8px;
+
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #00a8ff !important;
+}
+
+.shop-btn {
+    padding: 9px 20px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn-primary {
+    background: #00a8ff;
+    border-color: #00a8ff;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #008ed6;
+    border-color: #008ed6;
+
+    transform: translateY(-2px);
+}
+
+.btn i {
+    margin-left: 7px;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            rgba(0, 168, 255, 0.15),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(0, 168, 255, 0.08),
+            transparent 25%
+        ),
+
+        #080b12;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    padding-top: 70px;
+}
+
+.hero-label {
+    color: #00a8ff;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+}
+
+.hero-label i {
+    margin-right: 7px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 82px);
+
+    font-weight: 900;
+
+    line-height: 0.98;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    display: block;
+
+    color: #00a8ff;
+}
+
+.hero-description {
+    color: #aeb6c2;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    max-width: 560px;
+}
+
+
+/* ========================================
+   HERO BUTTONS
+======================================== */
+
+.hero-buttons {
+    margin-top: 30px;
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ========================================
+   HERO FEATURES
+======================================== */
+
+.hero-features {
+    display: flex;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 35px;
+
+    color: #aeb6c2;
+
+    font-size: 13px;
+}
+
+.hero-features i {
+    color: #00a8ff;
+
+    margin-right: 5px;
+}
+
+
+/* ========================================
+   PC SHOWCASE
+======================================== */
+
+.pc-showcase {
+    position: relative;
+
+    height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.glow {
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    background: rgba(0, 168, 255, 0.18);
+
+    filter: blur(80px);
+
+    border-radius: 50%;
+}
+
+
+/* ========================================
+   PC CASE
+======================================== */
+
+.pc-case {
+    width: 290px;
+
+    height: 450px;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1b2029,
+            #090c12
+        );
+
+    border:
+        2px solid #303743;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 0 30px rgba(0, 168, 255, 0.12),
+        0 30px 60px rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+}
+
+
+/* ========================================
+   PC FRONT
+======================================== */
+
+.case-front {
+    position: absolute;
+
+    right: 12px;
+
+    top: 15px;
+
+    width: 55px;
+
+    height: 420px;
+
+    background: #05070b;
+
+    border-radius: 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+}
+
+
+/* ========================================
+   FANS
+======================================== */
+
+.fan {
+    width: 42px;
+
+    height: 42px;
+
+    border:
+        3px solid #00a8ff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px rgba(0, 168, 255, 0.6);
+
+    position: relative;
+}
+
+.fan span {
+    width: 8px;
+
+    height: 8px;
+
+    background: #00a8ff;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 14px;
+
+    left: 14px;
+}
+
+
+/* ========================================
+   GPU
+======================================== */
+
+.gpu {
+    position: absolute;
+
+    width: 180px;
+
+    height: 75px;
+
+    left: 20px;
+
+    top: 190px;
+
+    background: #151a22;
+
+    border:
+        1px solid #343b46;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #00a8ff;
+
+    font-size: 12px;
+}
+
+.gpu-line {
+    position: absolute;
+
+    width: 120px;
+
+    height: 2px;
+
+    background: #00a8ff;
+
+    top: 10px;
+}
+
+
+/* ========================================
+   RAM
+======================================== */
+
+.ram {
+    position: absolute;
+
+    top: 80px;
+
+    left: 35px;
+
+    display: flex;
+
+    gap: 5px;
+}
+
+.ram div {
+    width: 9px;
+
+    height: 85px;
+
+    background: #00a8ff;
+
+    box-shadow:
+        0 0 12px rgba(0, 168, 255, 0.6);
+
+    border-radius: 2px;
+}
+
+
+/* ========================================
+   CASE TOP
+======================================== */
+
+.case-top {
+    position: absolute;
+
+    top: -8px;
+
+    left: 15px;
+
+    width: 260px;
+
+    height: 10px;
+
+    background: #252c36;
+
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   FLOATING CARDS
+======================================== */
+
+.floating-card {
+    position: absolute;
+
+    z-index: 3;
+
+    background:
+        rgba(17, 22, 30, 0.9);
+
+    border:
+        1px solid #303743;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    min-width: 190px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.floating-card i {
+    font-size: 27px;
+
+    color: #00a8ff;
+}
+
+.floating-card small {
+    display: block;
+
+    color: #727c8b;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+}
+
+.floating-card strong {
+    font-size: 12px;
+}
+
+.card-one {
+    top: 145px;
+
+    left: 15px;
+}
+
+.card-two {
+    right: -10px;
+
+    bottom: 145px;
+}
+
+
+/* ========================================
+   CATEGORIES
+======================================== */
+
+.categories {
+    padding: 100px 0;
+
+    background: #0c1018;
+}
+
+.section-heading p {
+    color: #00a8ff;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    font-weight: 800;
+}
+
+.section-heading h2 span {
+    color: #00a8ff;
+}
+
+
+/* ========================================
+   CATEGORY CARD
+======================================== */
+
+.category-card {
+    display: block;
+
+    height: 100%;
+
+    background: #111620;
+
+    border:
+        1px solid #202735;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00a8ff;
+
+    box-shadow:
+        0 15px 35px rgba(0, 168, 255, 0.08);
+}
+
+.category-icon {
+    width: 60px;
+
+    height: 60px;
+
+    background:
+        rgba(0, 168, 255, 0.1);
+
+    color: #00a8ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 10px;
+
+    font-size: 27px;
+
+    margin-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+.category-card h4 {
+    font-weight: bold;
+}
+
+.category-card p {
+    color: #7f8998;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.category-card span {
+    color: #00a8ff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* ========================================
+   WHY US
+======================================== */
+
+.why-us {
+    padding: 110px 0;
+
+    background: #080b12;
+}
+
+.section-label {
+    color: #00a8ff;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.why-us h2 {
+    font-size: 45px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+}
+
+.why-us h2 span {
+    color: #00a8ff;
+}
+
+.text-muted-custom {
+    color: #8b95a4;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   FEATURE BOX
+======================================== */
+
+.feature-box {
+    background: #111620;
+
+    border:
+        1px solid #202735;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+.feature-box:hover {
+    border-color: #00a8ff;
+
+    transform: translateY(-5px);
+}
+
+.feature-box i {
+    color: #00a8ff;
+
+    font-size: 30px;
+}
+
+.feature-box h5 {
+    margin-top: 15px;
+}
+
+.feature-box p {
+    color: #7f8998;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   CTA
+======================================== */
+
+.cta {
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 168, 255, 0.08),
+            rgba(0, 168, 255, 0.02)
+        );
+
+    border-top:
+        1px solid #1d2530;
+
+    border-bottom:
+        1px solid #1d2530;
+}
+
+.cta-icon {
+    font-size: 50px;
+
+    color: #00a8ff;
+}
+
+.cta h2 {
+    font-size: 42px;
+
+    font-weight: 800;
+
+    margin: 15px 0;
+}
+
+.cta p {
+    color: #8b95a4;
+
+    margin-bottom: 30px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    background: #05070b;
+
+    padding: 70px 0 25px;
+}
+
+.footer-logo {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+.footer-logo span {
+    color: #00a8ff;
+}
+
+footer p {
+    color: #707a89;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-top: 15px;
+
+    max-width: 400px;
+}
+
+footer h5 {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+footer a:not(.footer-logo) {
+    display: block;
+
+    color: #707a89;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #00a8ff;
+}
+
+
+/* ========================================
+   SOCIAL ICONS
+======================================== */
+
+.social-icons {
+    display: flex;
+
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+
+    height: 40px;
+
+    background: #111620;
+
+    display: flex !important;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+.social-icons i {
+    font-size: 18px;
+}
+
+
+footer hr {
+    border-color: #1c222c;
+
+    margin: 40px 0 20px;
+}
+
+
+/* ========================================
+   COPYRIGHT
+======================================== */
+
+.copyright {
+    display: flex;
+
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+}
+
+.copyright p {
+    margin: 0;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 991px) {
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .pc-showcase {
+        height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .card-one {
+        left: 0;
+    }
+
+    .card-two {
+        right: 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-features {
+        display: block;
+    }
+
+    .hero-features div {
+        margin-bottom: 8px;
+    }
+
+    .pc-case {
+        transform: scale(0.8);
+    }
+
+    .floating-card {
+        transform: scale(0.8);
+    }
+
+    .card-one {
+        left: -30px;
+    }
+
+    .card-two {
+        right: -30px;
+    }
+
+    .section-heading h2,
+    .why-us h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+}
